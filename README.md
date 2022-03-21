@@ -11,3 +11,9 @@ Auto Updater: Auto Updates using PasteBin or GitHub Raw Text to track the curren
 Grab Chrome, Brave and FireFox Cookie's/Seison's: This Funcion will find Chrome, Brave and FireFox Cookie's/Session's and Upload it to a FileUploader And Send to A Discord WebHook
 
 Discord Token Grabber??: This is a maybe, Because I do not find a point in doing this.
+
+Ping Clients: All Clients connected Will send there info to a Discord WebHook EG: IP, PC username and OS. (This Will be esential for next feture) 
+
+Attack Spesific Clients: Will use If Statments EG: If(attackip = enviorment.ip) {run script}. 
+
+Run custom scripts: you run a custom C# .net Script EG: If(Runcustomscript = "True") {StringCustomScript}
