@@ -1,5 +1,5 @@
 # NovaBotnet
-Nova BotNet is a CnC BotNet with a DDOS Function But Many more features coming soon, if you have experience with C# and sockets you will easily be able to add new features!!
+Nova BotNet is a CnC BotNet That Uses Raw Text From Sites like PasteBin Raw or GitHub.MD Raw Text at this current moment of time it only has a DDOS Function But Many more features coming soon, if you have experience with C# and sockets you will easily be able to add new features!!
 
 
 
