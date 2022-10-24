@@ -6,14 +6,16 @@ Nova BotNet is a CnC BotNet That Uses Raw Text From Sites like PasteBin Raw or G
 
 # Fetures Coming soon!!
 
-Auto Updater: Auto Updates using PasteBin or GitHub Raw Text to track the current download and Version.(This will be added soon)
+- [ ] Client Builder, Build Client Easily so you dont have to Change Links so you dont have to manualy.
 
-Grab Chrome, Brave and FireFox Cookie's/Seison's: This Funcion will find Chrome, Brave and FireFox Cookie's/Session's and Upload it to a FileUploader And Send to A Discord WebHook
+- [ ] Auto Updater: Auto Updates using PasteBin or GitHub Raw Text to track the current download and Version.(This will be added soon)
 
-Discord Token Grabber??: This is a maybe, Because I do not find a point in doing this.
+- [ ] Grab Chrome, Brave and FireFox Cookie's/Seison's: This Funcion will find Chrome, Brave and FireFox Cookie's/Session's and Upload it to a FileUploader And Send to A Discord WebHook
 
-Ping Clients: All Clients connected Will send there info to a Discord WebHook EG: IP, PC username and OS. (This Will be esential for next feture) 
+- [ ] Discord Token Grabber??: This is a maybe, Because I do not find a point in doing this.
 
-Attack Spesific Clients: Will use If Statments EG: If(attackip = enviorment.ip) {run script}. 
+- [ ] Ping Clients: All Clients connected Will send there info to a Discord WebHook EG: IP, PC username and OS. (This Will be esential for next feture) 
 
-Run custom scripts: you run a custom C# .net Script EG: If(Runcustomscript = "True") {StringCustomScript}
+- [ ] Attack Spesific Clients: Will use If Statments EG: If(attackip = enviorment.ip) {run script}. 
+
+- [ ] Run custom scripts: you run a custom C# .net Script EG: If(Runcustomscript = "True") {StringCustomScript}
